@@ -1,0 +1,22 @@
+{
+  "name": "@test/postgres-mcp",
+  "version": "1.2.0",
+  "description": "A test Postgres MCP server for registry validation.",
+  "license": "MIT",
+  "author": "Antigravity",
+  "homepage": "https://github.com/example/postgres-mcp",
+  "runtime": {
+    "type": "npm",
+    "package": {
+      "registry": "npm",
+      "name": "mcp-postgres-test",
+      "version": "1.0.0"
+    }
+  },
+  "transports": ["stdio"],
+  "permissions": {
+    "network": ["postgresql://*"],
+    "env": ["DATABASE_URL"]
+  },
+  "tags": ["database", "postgres"]
+}
